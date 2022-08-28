@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    overflow:visible;
+}
+body{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-image: url("/assets/home.png");
+}
+.ancients-container, .difficulties-container, .deck-container{
+    display: flex;
+    border: 1px rgb(64, 0, 255) solid;
+}
+.ancients-container, .deck-container{
+    flex-grow: 10;
+}
+.difficulties-container{
+    flex-grow: 9;
+}
