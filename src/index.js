@@ -16,6 +16,7 @@ const htmlDifficulties = document.querySelectorAll('.difficulty');
 const htmlDifficultiesList = document.querySelector('.difficulties');
 const closedCardNode = document.querySelector('.closed-card');
 const openedCardNode = document.querySelector('.opened-card');
+var openedCard;
 const tableCellArray = [document.querySelectorAll('.first-row td'), document.querySelectorAll('.second-row td'), document.querySelectorAll('.third-row td')]
 
 
@@ -190,7 +191,6 @@ function giveNextCard(){
 
   }
 }
-
 
 
 console.log(ancientsData, difficulties);
