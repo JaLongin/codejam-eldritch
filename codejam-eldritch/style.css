@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    overflow:visible;
+}
+body{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-image: url("./assets/home.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ancients-container, .difficulties-container, .deck-container{
+    display: flex;
+    border: 1px rgb(64, 0, 255) solid;
+    max-width: 40%;
+    min-width: 30%;
+    padding: 2%;
+}
+.ancients-container, .deck-container{
+    flex-grow: 10;
+}
+.difficulties-container{
+    flex-grow: 9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ancients-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.deck-container{
+    justify-content: space-between;
+    flex-direction: column;
+}
+.ancient{
+    height: 20vw;
+    width: 15.43vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.difficulties{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.difficulty{
+    cursor: pointer;
+    border: 1px solid rgb(255, 0, 0);
+    display: block;
+    color: rgb(216, 177, 127);
+    font-size: 32px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    transition: 0.3s;
+}
+.difficulty.active{
+    background-color: rgb(1, 1, 167);
+}
+.ancient.active{
+    box-shadow: 10px 5px 5px red;
+}
+.table{
+    display: none;
+}
+td{
+    height: 28px;
+    font-size: 25px;
+    min-width: 28px;
+}
+.first-column{
+    background-color: rgb(28, 150, 6);
+}
+.second-column{
+    background-color: rgb(139, 107, 8);
+}
+.third-column{
+    background-color: rgb(4, 47, 204);
+}
+.closed-card{
+    visibility: hidden;
+    background-image: url('./assets/mythicCardBackground.png');
+    height: 15vw;
+    width: 11.57vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.opened-card{
+    visibility: hidden;
+    height: 15vw;
+    width: 11.57vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
